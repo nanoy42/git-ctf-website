@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "git-ctf-website"
+version = "0.1.0"
+description = ""
+authors = ["Yoann Piétri <me@nanoy.fr>"]
+readme = "README.md"
+packages = [{include = "git_ctf_website"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "^4.1.6"
+gunicorn = "^20.1.0"
+psycopg2 = "^2.9.5"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.16.1"
+black = "^23.1.0"
+djlint = "^1.19.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
